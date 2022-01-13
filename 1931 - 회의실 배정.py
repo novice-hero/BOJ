@@ -1,10 +1,4 @@
 N = int(input())
-n = []
-
-for _ in range(N):
-  s, e = map(int, input().split())
-  n.append([s, e])
-
 
 n = sorted(n, key=lambda x: (x[1], x[0]))
 start = n[0][1]
