@@ -1,1 +1,1 @@
-# BOJ
+# Baekjoon online judge를 푼 기록들 입니다.
