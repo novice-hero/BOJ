@@ -17,4 +17,5 @@ for i in range(0, 9):
     total += alphabet[i] * a
     a -= 1
 
+
 print(total)
