@@ -15,5 +15,4 @@ for i in range(1, n):
     else:
         heapq.heappop(room)
         heapq.heappush(room, time[i][1])
-
 print(len(room))
