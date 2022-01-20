@@ -11,7 +11,6 @@ for i in s:
         else:
             break
     stack.append(i)
-
 if k > 0:
     for i in range(k):
         stack.pop()
