@@ -10,4 +10,4 @@ else:
 # 평행 + 대각선
 temp3 = (min(x, y) * s) + (abs(x - y) * w)
 
-print(min(temp1,temp2,temp3))
+print(min(temp1, temp2, temp3))
