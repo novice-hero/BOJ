@@ -2,21 +2,12 @@ h,w = map(int, input().split())
 block = list(map(int, input().split()))
 answer = 0
 
-left = 0
-right = w-1
-maxL = -1
-maxR = -1
+for i in range(1, w-1):
+  left = max(block[:i])
+  right = max(block[i+1:])
+  minimal = min(left, right)
 
-while left < right:
-  maxL = max(maxL, block[left])
-  maxR = max(maxR, block[right])
-
-  if maxL > maxR:
-    answer += maxR - block[right]
-    right-=1
-
-  elif maxL < maxR:
-    answer += maxL - block[left]
-    left+=1
+  if minimal > block[i]:
+    answer += minimal - block[i]
 
 print(answer)
